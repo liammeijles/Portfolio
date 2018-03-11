@@ -1,0 +1,232 @@
+* {margin: 0; font-family: Roboto, sans-serif;}
+@font-face {
+    font-family: Roboto, sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Roboto');
+}
+#groot {
+    z-index: 2;
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    background-color: #666666;
+}
+nav a {
+    padding-top: 1.5vw;
+    text-decoration: none;
+    font-size: 28px;
+    text-align: center;
+    color: white; 
+    transition: color .3s;
+    transition: background-color .3s;
+}
+h1 {
+    padding-top: 115px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+h2 {
+    text-align: center;
+    font-size: 22px;
+}
+p {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 21px;
+    line-height: 35px;
+}
+hr {
+    margin: 35px;
+}
+#goldendragon {
+    text-align: center;
+}
+#goldendragon p {
+    width: 50vw;
+    text-align: center;
+}
+#goldendragon img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 18vw;
+}
+#dopelogo {
+    text-align: center;
+}
+#dopelogo img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 28vw;
+}
+#dopelogo p {
+    width: 60vw;
+}
+#folder {
+    text-align: center;
+}
+#folder img {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px;
+    width: 28vw;
+}
+#folder p {
+    width: 35vw;
+}
+form {
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    width: 30vw;
+    text-align: center;
+}
+td {
+    font-size: 19px;
+}
+input {
+    font-size: 19px;
+}
+textarea {
+    font-size: 19px;
+}
+#button {
+    margin-top: 20px;
+    padding: 6px;
+    background-color: #666666;
+    border: none;
+    color: white;
+    transition: color .3s;
+    transition: background-color .3s;
+}
+
+@media (max-width: 700px) {
+    #groot {
+        display: none;
+    }
+    h1 {
+        display: none;
+    }
+    p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    #navbar {
+        position: relative;
+        z-index: 2;
+    }
+    #klein {
+        background-color: #666666;
+        margin-bottom: 25px;
+    }
+    #klein a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        padding: 8px;
+        display: inline-block;
+    }
+    li a {
+        text-align: center;
+    }
+    ul {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+    ul li {
+        display: inline-block;
+    }
+    ul li:hover {
+        background: #666666;
+    }
+    ul li:hover ul {
+        background: #666666;
+        display: block;
+    }
+    ul li ul {
+        position: absolute;
+        width: 200px;
+        display: none;
+    }
+    ul li ul li { 
+        display: block;
+        background: #666666;
+    }
+    ul li ul li a {
+        display: block;
+    } 
+    ul li ul li:hover {
+        background: #8c8c8c;
+    }
+    #titel {
+        float: right;
+        position: relative;
+        right: 35vw;
+        top: 6px;
+    }
+    #folder img {
+        width: 85vw;
+    }
+    #folder p {
+        width: 90vw;
+    }
+    #button {
+        transition: none;
+    }
+    #button:hover {
+        background: #8c8c8c;
+    }
+    form {
+        position: relative;
+        float: left;
+        z-index: 1;
+    }
+    #goldendragon img {
+        width: 40vw;
+        margin: 8px;        
+    }
+    #goldendragon p {
+        width: 85vw;
+    }
+    #mobile2 {
+        display: none;
+    }
+    #dopelogo img {
+        width: 65vw;
+    }
+    #dopelogo p {
+        width: 85vw;
+    }
+}
+@media (min-width: 700.1px) {
+    #klein {
+        display: none;
+        margin-left: 18px;
+    }
+    #button:hover {
+        background-color: #8c8c8c;
+        color: gold;
+    }
+    nav a:hover {
+        color: gold;
+        background-color: #8c8c8c;
+    }
+    #folder {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    #goldendragon {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    #dopelogo {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #mobile {
+        display: none;
+    }
+}
